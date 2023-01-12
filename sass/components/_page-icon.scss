@@ -1,0 +1,19 @@
+.icon {
+  width: 170px;
+  height: 92px;
+  padding-right: 10px;
+  fill: $lateColor;
+  border: 1px solid $lateColor;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $skyColor;
+    transition: $typicalTransition;
+    fill: $skyColor;
+    cursor: pointer;
+  }
+  &__place {
+    padding: 18px 38px;
+  }
+}

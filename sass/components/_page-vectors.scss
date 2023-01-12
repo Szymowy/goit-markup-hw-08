@@ -1,0 +1,26 @@
+.box {
+  padding: 0px 15px;
+  gap: 30px;
+
+  &__main {
+    font-weight: 700;
+    font-size: $pixel;
+    line-height: 1.14;
+  }
+  &__icon {
+    background-color: $snowColor;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    padding: 25px 0px;
+    text-align: center;
+  }
+
+  &__text {
+    color: $cloudColor;
+    font-weight: 400;
+    font-size: $pixel;
+    line-height: 1.7;
+    padding-top: 10px;
+  }
+}

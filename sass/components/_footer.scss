@@ -1,0 +1,86 @@
+.down-wall {
+  background-color: $fogColor;
+  padding: 60px 0px;
+  border-top: 1px ridge;
+  &__stil {
+    font-family: "Raleway", sans-serif;
+    color: $primaryColor;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  }
+}
+
+.post {
+  color: $primaryColor;
+  font-style: normal;
+  padding-top: 20px;
+
+  &__info {
+    padding-bottom: 9px;
+  }
+  &__contact {
+    color: $cloudColor;
+    font-style: normal;
+    font-size: $pixel;
+    line-height: 1.5;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $skyColor;
+      transition: $typicalTransition;
+    }
+  }
+}
+
+.connect {
+  padding-top: 4px;
+  padding-left: 70px;
+
+  &__join {
+    color: $primaryColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__letter {
+    background-color: $fogColor;
+    width: 358px;
+    height: 48px;
+    padding-left: 16px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    transition: $typicalTransition;
+  }
+
+  &__circles {
+    padding-top: 20px;
+    gap: 10px;
+  }
+  &__wheel {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+
+    &:hover,
+    &:focus {
+      background-color: $skyColor;
+      cursor: pointer;
+      transition: $typicalTransition;
+    }
+  }
+  &__social {
+    fill: $primaryColor;
+
+    &:hover,
+    &:focus {
+      fill: $primaryColor;
+      cursor: pointer;
+      transition: $typicalTransition;
+    }
+  }
+}

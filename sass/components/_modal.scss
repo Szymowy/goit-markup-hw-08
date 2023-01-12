@@ -1,0 +1,157 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: relative;
+  transition-delay: 250ms;
+  width: 528px;
+  height: 581px;
+  background-color: $primaryColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $primaryColor;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.open {
+  color: $nightColor;
+  width: 448px;
+  height: 23px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  margin-left: 27px;
+
+  &__form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.frame {
+  &__label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.166;
+    color: $cloudColor;
+  }
+  &__label textarea[type="placeholder"] {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &__inside {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding-left: 35px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition: $typicalTransition;
+  }
+  &__icon {
+    position: absolute;
+    left: 54px;
+    transform: translateX(0%);
+    transition: $typicalTransition;
+
+    &--name {
+      top: 18.75%;
+    }
+    &--tel {
+      top: 31.25%;
+    }
+    &--email {
+      top: 43.75%;
+    }
+  }
+  &__text {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 12px 16px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
+    transition: $typicalTransition;
+  }
+}
+.frame input:focus + p {
+  fill: $skyColor;
+  transition: $typicalTransition;
+}
+.frame input:focus,
+.frame textarea:focus {
+  outline: 0px;
+  border: 1px solid $skyColor;
+  transition: $typicalTransition;
+}
+.checkbox {
+  color: $cloudColor;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+  margin: 20px 16px;
+
+  &__point {
+    align-items: center;
+    background-color: $primaryColor;
+    margin: 0;
+    appearance: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+  }
+  &__icon {
+    position: absolute;
+    background-color: $skyColor;
+    fill: $primaryColor;
+    border: 1px solid $skyColor;
+    border-radius: 2px;
+    transition: $typicalTransition;
+    opacity: 0;
+  }
+  &__point:checked + svg {
+    opacity: 1;
+    transition: $typicalTransition;
+  }
+}
+
+.checkbox a {
+  color: $skyColor;
+}
