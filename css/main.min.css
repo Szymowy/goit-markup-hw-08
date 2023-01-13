@@ -154,6 +154,9 @@ ul {
   line-height: 1.7;
   padding-top: 10px;
 }
+.third-section {
+  padding-top: 0;
+}
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -166,9 +169,6 @@ ul {
 }
 .section__inter {
   gap: 30px;
-}
-.third-section {
-  padding-top: 0;
 }
 .photo-work {
   position: relative;
@@ -195,9 +195,6 @@ ul {
 }
 .wall {
   background-color: #f5f4fa;
-}
-.wall__place {
-  padding-top: 94px;
 }
 .photo-people {
   border-radius: 4px;
