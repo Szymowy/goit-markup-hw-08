@@ -2,6 +2,10 @@
   padding: 0px 15px;
   gap: 30px;
 
+  &__box {
+    width: 450px;
+  }
+
   &__style {
     font-weight: 700;
     font-size: $pixel;
@@ -9,7 +13,8 @@
   }
   &__icon {
     background-color: $snowColor;
-    width: 270px;
+    width: 450px;
+
     height: 120px;
     margin-bottom: 30px;
     padding: 25px 0px;
@@ -22,5 +27,17 @@
     font-size: $pixel;
     line-height: 1.7;
     padding-top: 10px;
+  }
+}
+@media (min-width: 480px) {
+  .vector__box,
+  .vector__icon {
+    width: 354px;
+  }
+}
+@media (min-width: 768px) {
+  .vector__box,
+  .vector__icon {
+    width: 270px;
   }
 }
