@@ -8,16 +8,40 @@
     url("../images/main.image.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1600px 600px;
-  max-width: 1600px;
+  background-size: 480px 400px;
+  max-width: 480px;
   margin: 0 auto;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 28px;
+  padding-top: 28px;
 
   &__description {
-    padding: 100px 252px 0px;
+    padding: 72px 58px 0px;
     text-transform: uppercase;
     text-align: center;
+  }
+}
+@media (min-width: 480px) {
+  .section-title {
+    background-size: 768px 400px;
+    max-width: 768px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    &__description {
+      padding: 100px 192px 0px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .section-title {
+    background-size: 1600px 600px;
+    max-width: 1600px;
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+    &__description {
+      padding: 100px 252px 0px;
+    }
   }
 }
 .section {
