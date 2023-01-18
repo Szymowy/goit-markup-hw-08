@@ -17,8 +17,10 @@
 .modal {
   position: relative;
   transition-delay: 250ms;
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: $primaryColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -34,7 +36,7 @@
     text-align: center;
     margin-top: 40px;
     margin-bottom: 12px;
-    margin-left: 27px;
+    // margin-left: 27px;
   }
 
   &__form {
@@ -42,6 +44,18 @@
     padding-right: 40px;
   }
 }
+
+@media (min-width: 768px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+
+    &__text {
+      margin-left: 27px;
+    }
+  }
+}
+
 .close {
   position: absolute;
   right: 8px;
@@ -82,13 +96,13 @@
     transition: $typicalTransition;
 
     &--name {
-      top: 18.75%;
+      top: 18%;
     }
     &--tel {
-      top: 31.25%;
+      top: 30%;
     }
     &--email {
-      top: 43.75%;
+      top: 41.75%;
     }
   }
   &__text {
@@ -104,6 +118,21 @@
     transition: $typicalTransition;
   }
 }
+
+@media (min-width: 768px) {
+  .frame__icon {
+    &--name {
+      top: 18.75%;
+    }
+    &--tel {
+      top: 31.25%;
+    }
+    &--email {
+      top: 43.75%;
+    }
+  }
+}
+
 .frame input:focus + p {
   fill: $skyColor;
   transition: $typicalTransition;
@@ -117,13 +146,13 @@
 .checkbox {
   color: $cloudColor;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 11.5px;
+  line-height: 1.16;
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 4px;
-  margin: 20px 16px;
+  gap: 6px;
+  margin: 20px 0px;
 
   &__point {
     align-items: center;
@@ -153,4 +182,13 @@
 
 .checkbox a {
   color: $skyColor;
+}
+
+@media (min-width: 768px) {
+  .checkbox {
+    font-size: 14px;
+    line-height: 1.7;
+    gap: 4px;
+    margin: 20px 16px;
+  }
 }

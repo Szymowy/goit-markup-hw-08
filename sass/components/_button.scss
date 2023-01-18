@@ -63,7 +63,8 @@
   padding: 2px 28px 2px 42px;
   border-radius: 4px;
   box-shadow: $typicalShade;
-  margin-left: 10px;
+  // margin-left: 10px;
+  margin: 20px 130px;
   border: $skyColor;
   fill: $primaryColor;
   cursor: pointer;
@@ -84,6 +85,19 @@
     fill: $nightColor;
   }
 }
+
+@media (min-width: 480px) {
+  .button-down {
+    margin: 20px 220px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-down {
+    margin: 10px 0;
+  }
+}
+
 .button-form {
   color: $primaryColor;
   background-color: $skyColor;
@@ -93,7 +107,8 @@
   padding: 10px 72px;
   border-radius: 4px;
   box-shadow: $typicalShade;
-  margin: 10px 124px;
+  // margin: 10px 124px;
+  margin: 10px 94px;
   border: 0px;
   text-align: center;
   justify-content: center;
@@ -104,5 +119,11 @@
     color: $nightColor;
     background-color: $snowColor;
     transition: $typicalTransition;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-form {
+    margin: 10px 124px;
   }
 }

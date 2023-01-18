@@ -12,6 +12,7 @@
 //   width: 1200px;
 //   margin: 0 auto;
 // }
+
 @media (min-width: 480px) {
   .container {
     width: 768px;
@@ -33,7 +34,7 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
+  justify-content: center;
 }
 
 // @media (min-width: 480px) {
