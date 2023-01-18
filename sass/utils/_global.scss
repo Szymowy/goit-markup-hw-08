@@ -33,8 +33,13 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
 }
+
+// @media (min-width: 480px) {
+//   .wrapper {
+//   }
+// }
 
 body {
   font-family: "Roboto", sans-serif;
