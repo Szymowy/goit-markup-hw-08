@@ -1,6 +1,7 @@
 .logo {
-  border-bottom: 1px ridge;
+  height: 60px;
 
+  border-bottom: 1px ridge;
   &__type {
     display: flex;
   }
@@ -9,34 +10,36 @@
     gap: 93px;
   }
 }
-// @media (min-width: 480px) {
-//   .logo {
-//     display: flex;
-//   }
-//   &__type {
-//     color: white;
-//     display: flex;
-//   }
+@media (min-width: 480px) {
+  .logo {
+    height: 82px;
+    //     display: flex;
+    //   }
+    // &__type {
+    // //   //     color: white;
+    //   display: flex;
+    // }
 
-//   &__inter {
-//     gap: 93px;
-//   }
-// }
-// @media (min-width: 768px) {
-//   .logo {
-//     border-bottom: 1px ridge;
+    //   &__inter {
+    //     gap: 93px;
+  }
+}
+@media (min-width: 768px) {
+  .logo {
+    // height: 100px;
+    //     border-bottom: 1px ridge;
 
-//     &__type {
-//       display: flex;
-//     }
+    //     &__type {
+    //       display: flex;
+    //     }
 
-//     &__inter {
-//       gap: 93px;
-//     }
-//   }
-// }
+    //     &__inter {
+    //       gap: 93px;
+  }
+}
+
 .stil {
-  padding: 24px 0px 25px;
+  padding: 15px 10px 15px;
 
   &__icon {
     font-family: "Raleway", sans-serif;
@@ -56,20 +59,27 @@
 }
 
 @media (min-width: 480px) {
-  .stil__icon {
-    margin-right: 46px;
+  .stil {
+    padding: 24px 15px 25px;
+    &__icon {
+      margin-right: 46px;
+    }
   }
 }
-
 @media (min-width: 768px) {
-  .stil__icon {
-    margin-right: 93px;
+  .stil {
+    padding: 24px 0px 25px;
+
+    &__icon {
+      margin-right: 93px;
+    }
   }
 }
 
 .pages {
   gap: 46px;
-  padding: 32px 0px;
+  padding: 0px;
+  display: block;
 
   &__list-item {
     position: relative;
@@ -77,62 +87,63 @@
   &__name {
     // color: white;
 
-    color: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.14;
-    text-decoration: none;
+    color: white;
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 1.14;
+    // text-decoration: none;
 
-    &--active::after {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 4px;
-      top: 49px;
-      border-radius: 2px;
-      background: #2196f3;
-    }
+    // &--active::after {
+    //   content: "";
+    //   position: absolute;
+    //   display: block;
+    //   width: 100%;
+    //   height: 4px;
+    //   top: 49px;
+    //   border-radius: 2px;
+    // background: white;
+    // }
 
-    &:hover,
-    &:focus {
-      color: $skyColor;
-      transition: $typicalTransition;
-    }
+    // &:hover,
+    // &:focus {
+    //   color: white;
+    //   transition: $typicalTransition;
+    // }
   }
 }
 @media (min-width: 480px) {
   .pages {
     gap: 23px;
-    // padding: 32px 0px;
+    padding: 32px 0px;
+    display: flex;
 
     // &__list-item {
     //   position: relative;
     // }
-    // &__name {
-    //   color: inherit;
-    //   font-weight: 500;
-    //   font-size: 16px;
-    //   line-height: 1.14;
-    //   text-decoration: none;
+    &__name {
+      color: inherit;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.14;
+      text-decoration: none;
 
-    //   &--active::after {
-    //     content: "";
-    //     position: absolute;
-    //     display: block;
-    //     width: 100%;
-    //     height: 4px;
-    //     top: 49px;
-    //   border-radius: 2px;
-    //   background: #2196f3;
-    // }
+      &--active::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        top: 49px;
+        border-radius: 2px;
+        background: #2196f3;
+      }
 
-    // &:hover,
-    // &:focus {
-    //   color: $skyColor;
-    //   transition: $typicalTransition;
-    // }
-    // }
+      &:hover,
+      &:focus {
+        color: $skyColor;
+        transition: $typicalTransition;
+      }
+    }
   }
 }
 
@@ -149,11 +160,13 @@
     gap: 0px;
     height: 0px;
     padding: 0px;
+    display: block;
   }
 
   &__color {
-    // fill: white;
-    fill: $cloudColor;
+    fill: white;
+
+    // fill: $cloudColor;
 
     // &:hover,
     // &:focus {
@@ -168,7 +181,8 @@
 
     &__contact {
       gap: 50px;
-      // padding: 32px 0px;
+      padding: 21px 15px;
+      // display: block;
     }
 
     &__color {
@@ -185,5 +199,6 @@
 @media (min-width: 768px) {
   .navi__contact {
     padding: 32px 0px;
+    display: flex;
   }
 }
