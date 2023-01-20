@@ -9,20 +9,18 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    // margin-left: 52px;
     display: flex;
-    //  align-items: center;
     justify-content: center;
   }
 }
-
-@media (min-width: 480px) {
+@media (min-width: 768px) {
+  // @media (min-width: 480px) {
   .down-wall {
     padding-bottom: 0;
   }
 }
-
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
+  // @media (min-width: 768px) {
   .down-wall {
     padding: 60px 0px;
     &__stil {
@@ -45,9 +43,7 @@
     font-size: $pixel;
     line-height: 1.5;
     text-decoration: none;
-    // margin-left: 63px;
     display: flex;
-    // align-items: center;
     justify-content: center;
 
     &:hover,
@@ -57,17 +53,14 @@
     }
   }
 }
-
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
+  // @media (min-width: 768px) {
   .post__contact {
     justify-content: left;
   }
 }
 
 .connect {
-  // padding-top: 4px;
-  // padding-left: 70px;
-
   padding: 60px 20px 0px;
 
   &__join {
@@ -76,17 +69,15 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    // padding: 0px 120px;
     padding: 0;
     display: flex;
-    // align-items: center;
     justify-content: center;
   }
   &__letter {
     background-color: $fogColor;
-    width: 450px;
-    height: 48px;
-    padding-left: 16px;
+    // width: 100%;
+    // height: 48px;
+    padding: 14px 200px 14px 16px;
     margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -122,32 +113,27 @@
     }
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
+  // @media (min-width: 480px) {
   .connect {
-    // padding-top: 4px;
-    // padding-left: 70px;
     padding: 4px 70px 120px;
-    &__letter {
-      //   width: 358px;
-      margin-left: 100px;
-    }
-    &__join {
-      // padding: 0px 155px;
-      padding: 0;
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-    }
+    // &__letter {
+    //   // margin-left: 100px;
+    //   width: 450px;
+  }
+  &__join {
+    padding: 0;
   }
 }
-@media (min-width: 768px) {
+
+@media (min-width: 1200px) {
+  // @media (min-width: 768px) {
   .connect {
-    // padding-left: 20px;
     padding: 4px 45px;
-    &__letter {
-      width: 358px;
-      margin-left: 0;
-    }
+    // &__letter {
+    //   width: 358px;
+    //   // margin-left: 0;
+    // }
     &__join {
       justify-content: left;
     }

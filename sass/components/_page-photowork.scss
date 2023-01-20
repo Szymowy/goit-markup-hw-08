@@ -3,29 +3,13 @@
   overflow: auto;
   width: 0;
   height: 0;
-
-  // &__img {
-  // display: block;
-
   &__overlay {
-    // position: absolute;
-    // bottom: 1;
-    // left: 1;
-    // width: 0;
-    // height: 0;
-    background-color: white;
-    color: white;
-    // font-weight: 400;
-    // font-size: 0px;
-    // line-height: 0;
-    // text-align: end;
+    background-color: $primaryColor;
+    color: $primaryColor;
   }
 }
-// &__text {
-//   padding-top: 0;
-// }
-
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
+  // @media (min-width: 768px) {
   .photo-work {
     position: relative;
     overflow: hidden;

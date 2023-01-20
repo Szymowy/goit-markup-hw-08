@@ -29,15 +29,19 @@
     padding-top: 10px;
   }
 }
-@media (min-width: 480px) {
-  .vector__box,
-  .vector__icon {
-    width: 354px;
+@media (min-width: 768px) {
+  @media (min-width: 480px) {
+    .vector__box,
+    .vector__icon {
+      width: 354px;
+    }
   }
 }
-@media (min-width: 768px) {
-  .vector__box,
-  .vector__icon {
-    width: 270px;
+@media (min-width: 1200px) {
+  @media (min-width: 768px) {
+    .vector__box,
+    .vector__icon {
+      width: 270px;
+    }
   }
 }

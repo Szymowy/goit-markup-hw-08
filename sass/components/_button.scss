@@ -55,16 +55,16 @@
   }
 }
 .button-down {
+  display: flex;
   color: $primaryColor;
   background-color: $skyColor;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  padding: 2px 28px 2px 42px;
+  padding: 2px 25px 2px 38px;
   border-radius: 4px;
   box-shadow: $typicalShade;
-  // margin-left: 10px;
-  margin: 20px 130px;
+  margin: 20px 120px;
   border: $skyColor;
   fill: $primaryColor;
   cursor: pointer;
@@ -85,16 +85,17 @@
     fill: $nightColor;
   }
 }
-
-@media (min-width: 480px) {
+@media (min-width: 768px) {
+  // @media (min-width: 480px) {
   .button-down {
-    margin: 20px 220px;
+    margin: 20px auto;
   }
 }
-
-@media (min-width: 768px) {
-  .button-down {
-    margin: 10px 0;
+@media (min-width: 1200px) {
+  @media (min-width: 768px) {
+    .button-down {
+      margin: 10px auto;
+    }
   }
 }
 
@@ -107,7 +108,6 @@
   padding: 10px 72px;
   border-radius: 4px;
   box-shadow: $typicalShade;
-  // margin: 10px 124px;
   margin: 10px 94px;
   border: 0px;
   text-align: center;
@@ -121,8 +121,8 @@
     transition: $typicalTransition;
   }
 }
-
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
+  // @media (min-width: 768px) {
   .button-form {
     margin: 10px 124px;
   }
