@@ -86,13 +86,11 @@
   }
 }
 @media (min-width: 768px) {
-  // @media (min-width: 480px) {
   .button-down {
     margin: 20px auto;
   }
 }
 @media (min-width: 1200px) {
-  // @media (min-width: 768px) {
   .button-down {
     margin: 10px 0px;
   }
@@ -107,7 +105,7 @@
   padding: 10px 72px;
   border-radius: 4px;
   box-shadow: $typicalShade;
-  margin: 10px 94px;
+  margin: 10px 25%;
   border: 0px;
   text-align: center;
   justify-content: center;
@@ -121,8 +119,7 @@
   }
 }
 @media (min-width: 1200px) {
-  // @media (min-width: 768px) {
   .button-form {
-    margin: 10px 124px;
+    margin: 10px 120px;
   }
 }
