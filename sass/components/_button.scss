@@ -61,10 +61,10 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  padding: 2px 25px 2px 38px;
+  padding: 2px 25px;
   border-radius: 4px;
   box-shadow: $typicalShade;
-  margin: 20px 120px;
+  margin: 20px auto;
   border: $skyColor;
   fill: $primaryColor;
   cursor: pointer;
@@ -92,10 +92,9 @@
   }
 }
 @media (min-width: 1200px) {
-  @media (min-width: 768px) {
-    .button-down {
-      margin: 10px auto;
-    }
+  // @media (min-width: 768px) {
+  .button-down {
+    margin: 10px 0px;
   }
 }
 
