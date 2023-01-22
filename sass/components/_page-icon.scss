@@ -1,6 +1,7 @@
 .icon {
-  width: 170px;
-  height: 92px;
+  max-width: 210px;
+  width: 100%;
+  height: auto;
   padding-right: 10px;
   fill: $lateColor;
   border: 1px solid $lateColor;
@@ -15,5 +16,15 @@
   }
   &__place {
     padding: 18px 38px;
+  }
+}
+@media (min-width: 768px) {
+  .icon {
+    max-width: 226px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon {
+    max-width: 170px;
   }
 }

@@ -1,6 +1,6 @@
 .down-wall {
   background-color: $fogColor;
-  padding: 60px 0px;
+  padding: 0px;
   border-top: 1px ridge;
 
   &__stil {
@@ -15,7 +15,7 @@
 }
 @media (min-width: 768px) {
   .down-wall {
-    padding-bottom: 0;
+    padding: 60px 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -31,6 +31,7 @@
   color: $primaryColor;
   font-style: normal;
   padding-top: 20px;
+  margin-left: 50px;
 
   &__info {
     padding-bottom: 9px;
@@ -43,6 +44,7 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
+    margin-right: 50px;
 
     &:hover,
     &:focus {
@@ -53,7 +55,8 @@
 }
 @media (min-width: 1200px) {
   .post {
-    padding: 20px 45px 0px 0px;
+    padding: 20px 0px;
+    margin-left: 0px;
 
     &__contact {
       justify-content: left;
@@ -63,6 +66,7 @@
 
 .connect {
   padding: 60px 20px 0px;
+  max-width: 380px;
   width: 100%;
 
   &__join {
@@ -77,9 +81,13 @@
   }
   &__letter {
     background-color: $fogColor;
+    max-width: 450px;
     width: 100%;
     padding: 14px 200px 14px 16px;
+    display: flex;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     transition: $typicalTransition;
@@ -117,7 +125,7 @@
 @media (min-width: 768px) {
   .connect {
     padding: 0px 10px 100px;
-    width: 500px;
+
     &__join {
       padding: 0;
     }
@@ -126,14 +134,17 @@
 
 @media (min-width: 1200px) {
   .connect {
-    padding: 4px 45px;
-    width: 300px;
-    &__letter {
-      width: 358px;
-      margin-left: 0;
-    }
+    padding: 4px 0px;
+
+    // &__letter {
+    //   width: 358px;
+    //   margin-left: 0;
+    // }
     &__join {
       justify-content: left;
+    }
+    &__circles {
+      margin-left: -170px;
     }
   }
 }
