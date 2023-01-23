@@ -69,6 +69,9 @@
   max-width: 380px;
   width: 100%;
 
+  &__form {
+    display: block;
+  }
   &__join {
     color: $primaryColor;
     font-weight: 700;
@@ -135,7 +138,16 @@
 @media (min-width: 1200px) {
   .connect {
     padding: 4px 0px;
+    padding: 4px 0px;
+    width: 330px;
+    position: relative;
+    right: 100px;
 
+    &__form {
+      display: flex;
+      gap: 10px;
+      width: 500px;
+    }
     &__letter {
       max-width: 358px;
       margin-left: 0;
