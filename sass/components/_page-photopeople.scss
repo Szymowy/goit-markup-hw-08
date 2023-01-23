@@ -16,27 +16,27 @@
     border-bottom-right-radius: 4px;
     display: block;
 
-    width: 270px;
-    height: 260px;
-    background-image: url("images/men1.jpg");
-    background-image: url("images/woman_rel.jpg");
-    background-image: url("images/men_image2.jpg");
-    background-image: url("images/men_image3.jpg");
-    background-size: 270px 260px;
-  }
+    // width: 270px;
+    // height: 260px;
+    //   background-image: url("images/men1.jpg");
+    //   background-image: url("images/woman_rel.jpg");
+    //   background-image: url("images/men_image2.jpg");
+    //   background-image: url("images/men_image3.jpg");
+    //   background-size: 270px 260px;
+    // }
 
-  /* 2x screens, retina, 540x520 image */
+    // /* 2x screens, retina, 540x520 image */
 
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .box {
-      background-image: url("images/men1@2x.jpg");
-      background-image: url("images/woman_rel@2x.jpg");
-      background-image: url("images/men_image2@2x.jpg");
-      background-image: url("images/men_image3@2x.jpg");
-    }
+    // @media (min-device-pixel-ratio: 2),
+    //   (-webkit-min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   .box {
+    //     background-image: url("images/men1@2x.jpg");
+    //     background-image: url("images/woman_rel@2x.jpg");
+    //     background-image: url("images/men_image2@2x.jpg");
+    //     background-image: url("images/men_image3@2x.jpg");
+    //   }
   }
   &__description {
     border-bottom-left-radius: 4px;
