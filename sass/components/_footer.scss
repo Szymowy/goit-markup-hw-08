@@ -136,10 +136,10 @@
   .connect {
     padding: 4px 0px;
 
-    // &__letter {
-    //   width: 358px;
-    //   margin-left: 0;
-    // }
+    &__letter {
+      max-width: 358px;
+      margin-left: 0;
+    }
     &__join {
       justify-content: left;
     }
