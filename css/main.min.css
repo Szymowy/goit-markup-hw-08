@@ -406,10 +406,10 @@ ul {
   max-width: 210px;
   width: 100%;
   height: auto;
-  padding-right: 10px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  text-align: center;
 }
 .icon:hover,
 .icon:focus {
