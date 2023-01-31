@@ -56,14 +56,14 @@
     }
   }
   &__inter {
-    gap: 30px;
+    gap: 20px;
     // margin: 0px 30px;
   }
 }
 
 @media (min-width: 768px) {
   .section__inter {
-    margin: 0px;
+    gap: 30px;
   }
 }
 
