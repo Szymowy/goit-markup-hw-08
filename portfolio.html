@@ -26,6 +26,25 @@
   <body>
     <header class="logo">
       <div class="container logo__type">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
         <div class="wrapper logo__inter">
           <div class="stil">
             <a class="stil__icon" href="index.html"
@@ -328,8 +347,8 @@
       </section>
     </main>
     <footer class="down-wall">
-      <div class="container logo__type">
-        <div>
+      <div class="container wrapper logo__type">
+        <div class="connect">
           <a class="down-wall__stil" href="index.html"
             ><span class="stil__breand">Web</span>Studio</a
           >
@@ -377,23 +396,25 @@
         <div class="connect">
           <form>
             <p class="connect__join">Zapisz się do newslettera</p>
-            <label>
-              <input
-                type="email"
-                name="email"
-                placeholder="E-mail"
-                class="connect__letter"
-                required
-              />
-            </label>
-            <button type="submit" class="button-down">
-              <span class="button-down__label">
-                <span>Zapisz się</span>
-                <svg class="button-down__icon" width="44px" height="44px">
-                  <use href="./images/icon-send.svg#icon-icon-send"></use>
-                </svg>
-              </span>
-            </button>
+            <div class="connect__form">
+              <label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="connect__letter"
+                  required
+                />
+              </label>
+              <button type="submit" class="button-down">
+                <span class="button-down__label">
+                  <span>Zapisz się</span>
+                  <svg class="button-down__icon" width="44px" height="44px">
+                    <use href="./images/icon-send.svg#icon-icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
           </form>
         </div>
       </div>
