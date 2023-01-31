@@ -90,19 +90,20 @@
   }
   &__icon {
     position: absolute;
-    left: 54px;
+    //
+    margin: -38px 15px;
     transform: translateX(0%);
     transition: $typicalTransition;
 
-    &--name {
-      top: 16%;
-    }
-    &--tel {
-      top: 26.5%;
-    }
-    &--email {
-      top: 36.25%;
-    }
+    // &--name {
+    //   top: 16%;
+    // }
+    // &--tel {
+    //   top: 26.5%;
+    // }
+    // &--email {
+    //   top: 36.25%;
+    // }
   }
   &__text {
     display: flex;
@@ -118,19 +119,19 @@
   }
 }
 
-@media (min-width: 768px) {
-  .frame__icon {
-    &--name {
-      top: 18.75%;
-    }
-    &--tel {
-      top: 31.25%;
-    }
-    &--email {
-      top: 43.75%;
-    }
-  }
-}
+// @media (min-width: 768px) {
+//   .frame__icon {
+//     &--name {
+//       top: 18.75%;
+//     }
+//     &--tel {
+//       top: 31.25%;
+//     }
+//     &--email {
+//       top: 43.75%;
+//     }
+//   }
+// }
 
 .frame input:focus + p {
   fill: $skyColor;
