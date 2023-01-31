@@ -1,6 +1,6 @@
 .icon {
-  max-width: 210px;
-  width: 100%;
+  // max-width: 210px;
+  width: 45%;
   height: auto;
   // padding-right: 10px;
   fill: $lateColor;
@@ -16,7 +16,7 @@
     cursor: pointer;
   }
   &__place {
-    padding: 18px 38px;
+    padding: 18px;
   }
 }
 @media (min-width: 768px) {

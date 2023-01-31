@@ -18,8 +18,8 @@
   position: relative;
   transition-delay: 250ms;
   max-width: 450px;
-  width: 90%;
-  height: 85%;
+  width: 95%;
+  height: 609px;
   background-color: $primaryColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -27,14 +27,15 @@
 
   &__text {
     color: $nightColor;
-    width: 95%;
-    height: 23px;
+    // width: 95%;
+    // height: 23px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
+    padding: 40px 35px 20px;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    // margin-top: 40px;
+    // margin-bottom: 20px;
   }
 
   &__form {
@@ -43,14 +44,13 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
 
     &__text {
-      margin-left: 27px;
-      margin-bottom: 12px;
+      padding: 40px 0px 20px;
     }
   }
 }
@@ -126,8 +126,8 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 6px;
-  margin: 20px 0px;
+  gap: 4px;
+  margin: 20px 16px;
 
   &__point {
     align-items: center;
@@ -163,11 +163,11 @@
   color: $skyColor;
 }
 
-@media (min-width: 768px) {
-  .checkbox {
-    font-size: 14px;
-    line-height: 1.7;
-    gap: 4px;
-    margin: 20px 16px;
-  }
-}
+// @media (min-width: 1200px) {
+//   .checkbox {
+//     font-size: 14px;
+//     line-height: 1.7;
+//     gap: 4px;
+//     margin: 20px 16px;
+//   }
+// }

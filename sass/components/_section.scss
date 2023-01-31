@@ -57,13 +57,27 @@
   }
   &__inter {
     gap: 30px;
+    // margin: 0px 30px;
   }
 }
+
+@media (min-width: 768px) {
+  .section__inter {
+    margin: 0px;
+  }
+}
+
 @media (min-width: 1200px) {
   .section__titles--color {
     color: $secondaryColor;
   }
 }
+
+// @media (min-width: 1200px) {
+//   .section__inter {
+//     margin: 0px;
+//   }
+// }
 
 .third-section {
   height: 0;
