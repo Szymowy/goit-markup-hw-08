@@ -33,6 +33,14 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .photo-port {
+    padding: 0px 10px 94px;
+    justify-content: normal;
+  }
+}
+
 .photo-title {
   padding: 20px 24px;
   border-left: 1px solid $borderColor;

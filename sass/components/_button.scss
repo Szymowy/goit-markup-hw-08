@@ -30,7 +30,6 @@
   margin-left: 15px;
   padding-bottom: 50px;
   -webkit-box-pack: center;
-  // justify-content: center;
   gap: 8px;
 
   &__btn {
@@ -100,7 +99,6 @@
 }
 @media (min-width: 1200px) {
   .button-down {
-    // margin: 10px 0px;
     width: 200px;
   }
 }
@@ -130,8 +128,3 @@
     transition: $typicalTransition;
   }
 }
-// @media (min-width: 1200px) {
-//   .button-form {
-//     margin: 10px 120px;
-//   }
-// }
