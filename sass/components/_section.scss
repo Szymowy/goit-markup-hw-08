@@ -11,8 +11,8 @@
   background-size: 480px 100%;
   max-width: 480px;
   margin: 0 auto;
-  padding-bottom: 0;
-  padding-top: 0;
+  padding-bottom: 0px;
+  padding-top: 0px;
 
   &__description {
     padding: 72px 60px 0px;
@@ -23,7 +23,7 @@
 
 @media (min-width: 768px) {
   .section-title {
-    background-size: 768px 400px;
+    background-size: 768px 100%;
     max-width: 768px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -45,7 +45,7 @@
 
 @media (min-width: 1200px) {
   .section-title {
-    background-size: 1600px 600px;
+    background-size: 1600px 100%;
     max-width: 1600px;
     padding-bottom: 94px;
     padding-top: 94px;
